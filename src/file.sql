@@ -164,5 +164,5 @@ where b.published_year between '2010--1-1' and '2015-1-1';
 select concat(a.first_name, ' ', a.last_name) as author_full_name, sum(b.price) as salary_author
 from author a inner join book b on a.id = b.author_id
 where b.published_year between '2010-1-1' and '2015-1-1'
-group by first_name, last_name;
+group by first_name, last_name; __
 
